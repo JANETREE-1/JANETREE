@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交友</title>
+    <style>
+            @keyframes slowrise {
+            0% {
+                opacity: 0;
+                transform: translateY(80px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+              @keyframes waitt {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    .帖子{
+      width: 320px;  
+      height: 670px;
+      position: relative; left:12px;top:20px;
+      border-radius: 13px;
+      overflow: hidden;
+      background: linear-gradient(to right, #3398DA, #297FB7)
+    }
+    .list{
+       width: 320px; 
+       height: 888px;
+       border-radius: 20px;
+       background-color: white
+    }
+    .填色{
+        width: 300px;
+        height: 120px;
+        position: relative;left:-2px;top:-3px;
+        background-color: #F8FAFB
+    }
+      .帖子跳转{
+         width: 290px;
+         border: none;
+         height: 80px;
+         border-radius: 8px;
+         overflow: hidden;
+         animation: slowrise 0.8s ease forwards;
+         background: linear-gradient(to right, #3398DA, #297FB7);
+         position: relative;left:15px;top:13px;
+       }
+    body{
+       background-color: #DFDFDF
+    }
+    </style>
+</head>
+<body>
+    <div class="帖子">
+    <h1 style="color:white;position: relative;left:113px">帖子墙</h1>
+    <div class="list">
+    <button class="帖子跳转" onclick="帖子1()"> <div class="填色"></div><h3 style="position: relative;top: -120px;left:5px">震惊 八班的xxx居然干出这种事！<br><p style="font-size: 5px;position: relative;left:-3px;color: grey">发布时间: 2025-9-1 21.23</p></h3></button>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    function 帖子1() {
+  window.open("tiezi/1.html"); 
+  window.close();
+  }
+</script>

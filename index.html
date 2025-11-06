@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FuSha</title>
+        <style type="text/css">
+        @keyframes slowrise {
+            0% {
+                opacity: 0;
+                transform: translateY(80px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+              @keyframes waitt {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        .toggle{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: slowrise 0.8s ease forwards;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;left:11px;top:13px;
+        }
+        .toggle2{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: waitt 0s ease forwards, slowrise 0.8s ease forwards 0.1s;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;top:24px;left:11px;
+        }
+        .toggle3{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: waitt 0s ease forwards, slowrise 0.8s ease forwards 0.2s;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;top:36px;left:11px;
+        }
+        .toggle4{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: waitt 0s ease forwards, slowrise 0.8s ease forwards 0.3s;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;top:48px;left:11px;
+        }
+        .toggle5{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: waitt 0s ease forwards, slowrise 0.8s ease forwards 0.4s;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;top:60px;left:11px;
+        }
+        .toggle6{
+         width: 280px;
+         height: 70px; 
+         border: 0.1px solid #333;
+         border-radius: 13px;
+         animation: waitt 0s ease forwards, slowrise 0.8s ease forwards 0.5s;
+         background: linear-gradient(to right, #202348, #0F3643);
+         position: relative;top:72px;left:11px;
+        }
+        .main_top{
+            width: 300px;
+            height: 600px;
+            background: linear-gradient(to right, #6c5ce7, #00cec9);
+            border-radius: 28px;
+            overflow: hidden;
+            border: 0.1px solid #333;
+            position: relative;left:25px;top:60px;
+        }
+        .list{
+          width: 300px;
+          height: 999px;
+          border-radius: 10px;
+          border: 0.04px solid #333;
+          position: relative;top:-27px;
+          background-color: #0F1320
+        }
+        	body{
+             background-color: #161A30
+            }
+            .mianze{
+             background :none;
+             border: none;
+             text-decoration: underline;
+             position: relative;left:90px;top:-30px;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="main_top">
+               <h1 style="position: relative;color: white;left:40px;top:-10px">阜沙中学交友墙</h1>
+               <button onclick="openmianzeshengming()" class="mianze">免责声明 点击开启 </button>
+               <div class="list">
+               <button class="toggle" onclick="jiaoyou()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/tongzhi.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">校园帖子 | 交友区</h2></button>
+               <button class="toggle2" onclick="fatie()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/fatie.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">我要发帖 </h2></button>
+               <button class="toggle3" onclick="jieshao()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/jieshao.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">本校介绍 </h2></button>
+               <button class="toggle4" onclick="zanzhu()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/zanzhu.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">赞助网站 </h2></button>
+               <button class="toggle5" onclick="wenhao()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/wenhao.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">这是什么网站 </h2></button>
+               <button class="toggle6" onclick="dashi()"> <img style="width:40px;position: relative;left:-110px;top:15px"src="icon/dashi.png"/><h2 style="color: #00CEC9;position: relative;left:15px;top:-40px">学校大事 </h2></button>
+               </div>
+               </div>
+       </div>
+       
+	</body>
+</html>
+<script>
+function openmianzeshengming() {
+  window.open("page/免责条款.html"); 
+  window.close();
+  }
+  function jiaoyou() {
+  window.open("page/friend.html"); 
+  window.close();
+  }
+   function fatie() {
+  window.open("page/fatie.html"); 
+  window.close();
+  
+  }
+  function jieshao() {
+  window.open("page/jieshao.html"); 
+  window.close();
+  
+  }
+  function zanzhu() {
+  window.open("page/zanzhu.html"); 
+  window.close();
+  
+  }  
+  function wenhao() {
+  window.open("page/jiehuo.html"); 
+  window.close();
+  
+  }
+    function dashi() {
+  window.open("page/dashi.html"); 
+  window.close();
+  
+  }
+</script>
